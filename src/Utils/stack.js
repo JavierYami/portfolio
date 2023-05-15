@@ -1,0 +1,6 @@
+
+const stack = [
+    {
+        name: 'JavaScript'
+    }
+]
