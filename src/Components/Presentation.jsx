@@ -2,10 +2,10 @@
 const Presentation = () => {
 
         const handleDownload = () => {
-          const fileUrl = '/files/mi-archivo.pdf'; // Ruta relativa al archivo que deseas descargar
+          const fileUrl = '/CV-Javier Rivera-EN.pdf'; // Ruta relativa al archivo que deseas descargar
           const link = document.createElement('a');
           link.href = fileUrl;
-          link.download = 'mi-archivo.pdf'; // Nombre de archivo deseado para la descarga
+          link.download = 'CV-Javier Rivera-EN'; // Nombre de archivo deseado para la descarga
           link.click();
         };
         

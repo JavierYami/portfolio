@@ -1,6 +1,5 @@
 import Presentation from './Components/Presentation';
 import NavBar from './Components/NavBar';
-import ThemeButton from './Components/ThemeButton';
 import { useState } from 'react';
 
 function App() {
