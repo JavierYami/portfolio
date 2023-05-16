@@ -5,7 +5,7 @@ const MyStack = () => {
 
     return (
         <section>
-            <h1>My stack</h1>
+            <h1>Tech Skills</h1>
             <div >
                 {stack.map(stackItem => {
                     return (
