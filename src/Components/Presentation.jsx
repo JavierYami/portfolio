@@ -13,9 +13,10 @@ const Presentation = () => {
         <header className="h-4/6 flex justify-center mt-10">
             <div className="grid grid-cols-2 w-5/6 content-center p-3 place-items-center ">
                 <div>
-            <h1 className="font-black text-center mb-5 text-5xl">{'<Full Stack Web Developer />'}</h1>
-            <h2 className="text-center font-normal mb-5 text-xl">Javier Ignacio Rivera Valencia</h2>
-            <p className="text-justify mb-5 text-slate-600">Hello! I'm a passionate Full Stack web developer and Computer Science student. Recently graduating from Henry Bootcamp, I am currently seeking my first job opportunity as a versatile developer specializing in Full Stack, Front End, or Back End development.</p>
+            <h1 className="font-black text-cyan-500 text-center mb-5 text-5xl">{'<Full Stack Web Developer />'}</h1>
+            <h2 className="text-center font-normal mb-5 text-2xl">Javier Ignacio Rivera Valencia</h2>
+            <p className="text-center text-slate-600 text-xl">Hello! 👋 </p>
+            <p className="text-center mb-10 text-slate-600 text-xl">I'm a passionate Full Stack web developer and Computer Science student located in Mexico. </p>
             <ul className="flex justify-evenly">
                 <li><a href="https://github.com/JavierYami"><img className="w-10" src="https://res.cloudinary.com/dvldakcin/image/upload/v1681611897/Countries/github_uihy1p.png" alt="github" /></a></li>
                 <li><a className="" href="https://www.linkedin.com/in/javier-ignacio-rivera-valencia-22b19525a/"><img className="w-10" src="https://res.cloudinary.com/dvldakcin/image/upload/v1681612281/Countries/linkedin_jfyi7s.png" alt="linkedin" /></a></li>

@@ -4,11 +4,9 @@ import { useState } from 'react';
 
 function App() {
 
-  console.log(localStorage)
-
   const [isDark, setIsDark] = useState(false);
   return (
-    <div className= 'bg-white h-screen'>
+    <div className= 'bg-transparent h-screen'>
       <NavBar />
       <Presentation />
       {/* <ThemeButton isDark={isDark} setIsDark={setIsDark} /> */}
