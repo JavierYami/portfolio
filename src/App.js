@@ -1,6 +1,7 @@
 import Presentation from './Components/Presentation';
 import NavBar from './Components/NavBar';
 import { useState } from 'react';
+import Projects from './Components/Projects';
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
     <div className= 'bg-transparent h-screen'>
       <NavBar />
       <Presentation />
+      <Projects/>
       {/* <ThemeButton isDark={isDark} setIsDark={setIsDark} /> */}
     </div>
   );
