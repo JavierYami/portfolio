@@ -12,8 +12,8 @@ const Projects  = () => {
                 name={project.name}
                 description={project.description}
                 image={project.image}
-                desploy={project.deploy}
-                repository={project.respository}
+                deploy={project.deploy}
+                repository={project.repository}
                 /> 
                 )
             })}
