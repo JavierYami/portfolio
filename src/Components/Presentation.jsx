@@ -10,11 +10,11 @@ const Presentation = () => {
         };
         
     return (
-        <header className="h-4/6 flex justify-center mt-10 mb-20">
+        <header className="h-4/6 flex justify-center  mt-20 mb-20">
             <div className="grid grid-cols-2 w-5/6 content-center p-3 place-items-center ">
                 <div>
             <h1 className="font-black text-cyan-500 text-center mb-5 text-5xl">{'<Full Stack Web Developer />'}</h1>
-            <h2 className="text-center font-normal mb-5 text-2xl">Javier Ignacio Rivera Valencia</h2>
+            <h2 className="text-center text-indigo-500 font-bold font-normal mb-5 text-2xl">Javier Ignacio Rivera Valencia</h2>
             <p className="text-center text-slate-600 text-xl mb-5">Hello! 👋 </p>
             <p className="text-center mb-5 text-slate-600 text-xl">I'm a passionate Full Stack web developer and Computer Science student located in Mexico. </p>
             <ul className="flex justify-evenly">
