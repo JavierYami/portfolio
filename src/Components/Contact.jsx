@@ -45,7 +45,7 @@ const Contact = () => {
 
 
     return (
-        <section className="w-5/6 mx-auto">
+        <section id="contact" className="w-5/6 mx-auto">
             <h1 className="text-center text-5xl font-black text-cyan-500 mb-7">{'<Contact />'}</h1>
             <form action="https://getform.io/f/7c70b70d-0585-4015-aec3-9de7a23b3e66" method="POST" className="flex flex-col mx-auto items-center">
                 <input type="text" onChange={handleOnChange} value={contact.name} required name='name' placeholder="Name..." className="w-3/6 rounded-md border-2 border-solid border-cyan-500 my-5 p-2 focus:outline-none focus:border-indigo-500 "/>
