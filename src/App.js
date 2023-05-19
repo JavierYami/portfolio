@@ -5,6 +5,7 @@ import MyStack from './Components/MyStack';
 import { useState } from 'react';
 import Projects from './Components/Projects';
 import Footer from './Components/Footer';
+import Contact from './Components/Contact';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <Presentation />
       <About />
       <Projects/>
+      <Contact/>
       <Footer/>
       {/* <ThemeButton isDark={isDark} setIsDark={setIsDark} /> */}
     </div>
