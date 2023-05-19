@@ -18,8 +18,8 @@ const Presentation = () => {
             <p className="text-center text-slate-600 text-xl mb-5">Hello! 👋 </p>
             <p className="text-center mb-10 text-slate-600 text-xl">I'm a passionate Full Stack web developer and Computer Science student located in Mexico. </p>
             <ul className="flex justify-evenly">
-                <li><a href="https://github.com/JavierYami"><img className="w-10" src="https://res.cloudinary.com/dvldakcin/image/upload/v1681611897/Countries/github_uihy1p.png" alt="github" /></a></li>
-                <li><a className="" href="https://www.linkedin.com/in/javier-ignacio-rivera-valencia-22b19525a/"><img className="w-10" src="https://res.cloudinary.com/dvldakcin/image/upload/v1681612281/Countries/linkedin_jfyi7s.png" alt="linkedin" /></a></li>
+                <li><a target="_blank"  href="https://github.com/JavierYami"><img className="w-10" src="https://res.cloudinary.com/dvldakcin/image/upload/v1681611897/Countries/github_uihy1p.png" alt="github" /></a></li>
+                <li><a target="_blank"  href="https://www.linkedin.com/in/javier-ignacio-rivera-valencia-22b19525a/"><img className="w-10" src="https://res.cloudinary.com/dvldakcin/image/upload/v1681612281/Countries/linkedin_jfyi7s.png" alt="linkedin" /></a></li>
                 <li>
                     <button onClick={handleDownload} className="bg-black px-2  text-white rounded font-black h-full">CV</button>
                 </li>
