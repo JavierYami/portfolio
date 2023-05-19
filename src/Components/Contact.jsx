@@ -31,16 +31,18 @@ const Contact = () => {
         setErrors(validation({...contact, [name]: value}))
 
         if(Object.keys(errors).length === 0) setIsDisabled (false)
-        else setIsDisabled (true)
+        if(Object.keys(errors).length > 0) setIsDisabled (true)
 
-        console.log(isDisabled)
+
     }
 
     useEffect(()=> {
 
-     setErrors(validation({...contact}))
+     setErrors(validation({...contact}));
+     Object.keys(errors).length > 0 ? setIsDisabled(true) : setIsDisabled(false);
 
-    }, [isDisabled])
+    }, [isDisabled, errors])
+
 
     return (
         <section className="w-5/6 mx-auto">
@@ -52,7 +54,7 @@ const Contact = () => {
                 {errors.email ? <h6 className="text-pink-600 text-sm" >{errors.email}</h6> : <br/> }
                 <textarea rows='9'required  onChange={handleOnChange} value={contact.message} cols='50' name="message" placeholder="Message..." className="w-3/6 rounded-md border-2 border-solid resize-none border-cyan-500 my-5 p-2 focus:outline-none focus:border-indigo-500"/>
                 {errors.message ? <h6 className="text-pink-600 text-sm">{errors.message}</h6> : <br/>}
-                <button type="submit" disabled={isDisabled} className="w-1/6 text-xl bg-cyan-500 font-medium px-4 py-1 rounded text-white transition duration-300 ease-in-out hover:bg-indigo-500 mb-12 mt-5 disabled:bg-slate-200">Work with me</button>
+                <button type="submit" disabled={isDisabled} className="w-1/6 text-xl bg-cyan-500 font-medium px-4 py-1 rounded text-white transition duration-300 ease-in-out hover:bg-indigo-500 mb-12 mt-5 disabled:bg-slate-300">Work with me</button>
             </form>
         </section>
     )
