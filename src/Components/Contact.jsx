@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { validation } from "../Utils/validation";
 
 
 const Contact = () => {
@@ -9,16 +10,26 @@ const Contact = () => {
         message:'',
     })
 
+    const [errors, setErrors] = useState({
+        name:'',
+        email:'',
+        message:'',
+    })
+
     const handleOnChange = (event) => {
 
-        const name = event.target.event;
+        const name = event.target.name;
         const value = event.target.value;
 
         setContact({
             ...contact,
             [name]: value
         })
-        
+
+        setErrors(validation({...contact, [name]: value}))
+
+        console.log(errors)
+
     }
 
     return (
